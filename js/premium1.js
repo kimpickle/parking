@@ -12,8 +12,5 @@ $(function(){
         });
     });
 
-    //예약구매 페이지 이동
-    $(".text3").click(function(){
-        window.open("premium2.html")
-    })
+
 });
