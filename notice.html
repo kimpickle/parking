@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Plus !</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/hamburgers-spin.css">	
+	<script src="js/notice.js"></script>
+	<script src="js/hamburgers.js"></script> 
+	<style>
+		@import url(css/notice.css);
+		@font-face {
+			font-family: 'TheJamsil5Bold';
+			src: url(font/The-Jamsil-5-Bold.ttf);
+			font-weight: 700;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TheJamsil4Medium';
+			src: url(font/The-Jamsil-4-Medium.ttf);
+			font-weight: 500;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TheJamsil3Regular';
+			src: url(font/The-Jamsil-3-Regular.ttf);
+			font-weight: 400;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TheJamsil2Light';
+			src: url(font/The-Jamsil-2-Light.ttf);
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1><a href="index.html"><img src="images/logo.png" alt="plus 로고이미지"></a></h1>
+		<ul id="topMenu">
+			<li class="sub find"><a href="find1.html">Find</a>
+                <ul>
+                    <li><a href="find1.html">공영·사설 주차장 검색</a></li>
+                    <li><a href="find2.html">무료 주차장 검색</a></li>
+                </ul>
+			</li>
+			<li class="sub voucher"><a href="voucher1.html">Voucher</a>
+                <ul>
+                    <li><a href="voucher1.html">정기권 구매</a></li>
+                    <li><a href="voucher2.html">요금 안내</a></li>
+                </ul>
+			</li>
+			<li class="sub premium"><a href="premium1.html">Premium</a>
+                <ul>
+                    <li><a href="premium1.html">프리미엄 서비스</a></li>
+                    <li><a href="premium2.html">주차권 예약구매</a></li>
+                </ul>
+			</li>
+            <li class="sub notice"><a href="notice.html">Notice</a></li>
+            <li class="sub login"><a href="login.html">Login</a></li>
+
+		</ul>
+	
+	</div> <!--header-->
+	
+	<div id="container">
+        <div class="banner"><img src="images/notice_banner.jpg" alt="notice 배너이미지"></div>
+
+		<div class="note">
+			<h2>공지사항</h2>
+			<div id="menu">
+				<div class="hamburger hamburger--spin">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+				<a href="#">Menu</a>
+			</div>			
+
+			<ul class="menuList">
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">문의사항</a></li>
+				<li><a href="#">자주하는 질문</a></li>
+			</ul>			
+
+			<div class="Rnote">
+				<input type="text" placeholder="검색어를 입력하세요" >
+				<img src="images/search.svg" alt="돋보기 아이콘" width="25px">
+			</div>
+		</div>
+		<!-- note끝 -->
+
+		<div class="noteWrap">
+			<ul class="no">
+				<li class="one">no</li>
+				<li>9</li>
+				<li>8</li>
+				<li>7</li>
+				<li>6</li>
+				<li>5</li>
+				<li>4</li>
+				<li>3</li>
+				<li>2</li>
+				<li>1</li>
+			</ul>
+			<ul class="cap">
+				<li class="one">제목</li>
+				<li>프리미엄 서비스 할인 이벤트 안내</li>
+				<li>2024 최고의 주차장 TOP10</li>
+				<li>Plus 체험단 신청 안내</li>
+				<li>제주도 지역 서비스 Grand-Open!</li>
+				<li>프리미엄 주차권 서비스 도입 안내</li>
+				<li>정기 주차권 안내</li>
+				<li>서비스 향상을 위한 고객설문조사</li>
+				<li>웹 사이트 정기 점검 7월 25일 시행</li>
+				<li>환경 보호를 위한 전기차 충전소 확충 안내</li>
+			</ul>
+			<ul class="date">
+				<li class="one">작성일</li>
+				<li>24.07.25</li>
+				<li>24.07.22</li>
+				<li>24.07.11</li>
+				<li>24.07.11</li>
+				<li>24.07.10</li>
+				<li>24.07.05</li>
+				<li>24.04.20</li>
+				<li>24.04.11</li>
+				<li>24.04.09</li>
+			</ul>
+			<ul class="cnt">
+				<li class="one">조회수</li>
+				<li>152</li>
+				<li>222</li>
+				<li>242</li>
+				<li>147</li>
+				<li>202</li>
+				<li>311</li>
+				<li>113</li>
+				<li>197</li>
+				<li>179</li>
+			</ul>
+		</div>
+
+		<div class="btn">
+			<p>〈 이전 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;다음 〉 </p>
+		</div>
+		
+	</div> <!--container-->
+</div><!--wrapper-->
+
+	<div id="footer">
+
+		<div id="infowrap">
+            <div class="footerLogo"><a href="index.html"><img src="images/logo.svg" alt="로고 이미지"></a></div>            
+			<ul id="info">
+				<li>(주)PLUS</li>
+				<li>주소 : <span>경기도 수원시 팔달구 권광로</span></li>
+				<li>Tel : <span>010-1234-5678</span></li>
+				<li>Mail : <span>teamPlus@project.com</span></li>
+				<li class="infoRight">사업자등록번호 : <span>123-456-78945</span></li>
+				<li class="infoRight">통신판매업신고번호 : <span>2024-plus-0623</span></li>
+			</ul>
+		
+			<address>&copy;2024 PLUS Inc - All Rights Reserved.</address>
+			
+			<div id="sns">
+				<a href="#"><img id="insta" src="images/insta.svg" alt="인스타그램 로고이미지"></a>
+				<a href="#"><img id="blog" src="images/blog.svg" alt="네이버블로그 로고이미지"></a>	
+			</div>
+		</div>
+	</div><!--footer-->
+</body>
+</html>

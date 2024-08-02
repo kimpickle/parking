@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+*{ margin:0; padding:0; }
+li{ list-style-type:none; }
+a{ text-decoration:none; color:black; }
+a:hover{ text-decoration:none; }
+img{ vertical-align:middle; border:none; }
+address{ font-style:normal; }
+body{ font-size:12px; font-family:'TheJamsil5Bold'; }
+
+/* 모바일 */
+@media screen and (max-width:768px){
+	
+}
+
+
+/* 태블릿 */
+@media screen and (min-width:769px) and (max-width:1199px){
+
+
+}
+
+
+/* PC */
+@media screen and (min-width:1200px){
+	#wrapper{width:100%; height:2500px; margin:0 auto;}
+		#header{position:fixed; left:50%; top:0; width:1200px; height:100px; margin-left:-600px; padding-bottom:10px; background-color:rgba(255,255,255,0.8); z-index:999;}
+		
+			h1{float:left; width:180px; height:100px; line-height:100px; position:absolute; top:0; left:15px; cursor:pointer;}
+
+			#topMenu{float:right; margin-top:50px; margin-right:40px; width:730px;}
+				#topMenu .sub{ float:left; width:140px; font-size:18px; text-align:right;}
+					.sub a { color:#1E1E1E; }
+				#topMenu .sub:nth-child(2){margin:0 14px;}
+					.sub ul {margin-top:20px; display:none;}
+						.sub ul li{margin-bottom:10px; }
+							.sub ul li a{font-size:13px;}
+
+				#topMenu .sub:hover a{color:rgb(239, 62, 0);}
+				#topMenu .find:hover ul{display:block;}
+				#topMenu .voucher:hover ul{display:block;}
+				#topMenu .premium:hover ul{display:block;}
+					#topMenu .sub ul li:hover a{background-color:rgb(255,170,0); color:#fff; padding:7px 10px; border-radius:20px;}
+
+				#topMenu .voucher a{color:rgb(255,170,0);}
+	/* header끝 */
+
+		#container{position:relative; left:50%; top:0; width:1200px; height:2500px; margin-left:-600px;} 
+		.banner{width:1200px; height:500px; }
+
+		.change { font-size:30px; margin:120px 0 30px 55px; } /* 주차 정기권 구매 */
+		
+		.map{ width:1080px; height:460px; margin:0 auto; border:5px solid rgb(239, 62, 0); box-shadow:0px 8px 10px #ccc; }
+			.map .list{ width:240px; height:400px; position:absolute; top:690px; z-index:10;}
+				.list ul { width:233px; height:130px; border-bottom:1px solid #ccc; }
+					.list ul:nth-of-type(3) { border-bottom:0; }
+					
+					.list li { font-size:18px; margin-left:10px; margin-top:10px;}
+						.list li:nth-of-type(1) { margin:20px 0 0 18px; }
+					.list li span { font-size:11px; background-color:#ffefb7; padding:5px 10px; border-radius:7px; color:#ffaa00; float:right; margin:0 20px 0 10px;}
+						.list .btn { font-size:14px; text-align:center; line-height:27px; cursor:pointer; margin-left:17px; width:190px; height:27px;  border-radius:20px; }
+						.list .btn1 { margin-top:15px; background-color:rgb(239, 62, 0); border:2px solid rgb(239, 62, 0); color:#fff; }
+						.list .btn2 { margin-top:10px; border:2px solid rgb(239, 62, 0); }
+							
+							.list .btn1:hover { background-color:#ffaa00; border-color:#ffaa00; color:#fff; }
+							.list .btn2:hover{ background-color:rgb(239, 62, 0); color:white;}
+							
+			
+			.map iframe{ margin-left:233px; }
+			
+		/* 어떤 주차권을 찾고 계시나요? */
+		.search h2{ width:100%; height:80px; line-height:130px; text-align:center; font-size:25px; margin:20px 0 15px; }
+			
+		.search-input { text-align:center; }
+			.search-input input{ position: relative; width:500px; height:72px; border:3px solid rgb(239, 62, 0); border-radius:11px; text-align:center; font-family: 'TheJamsil3Regular'; font-size:15px; } 
+				.search-input input:focus { border-color:#FFAA00; outline:none; }
+			
+			.search-btn{ margin-left:10px; width:117px; height:78px; border-radius:15px; background-color:rgb(239, 62, 0); color:#fff; cursor:pointer; border:none; }
+				.search-btn:hover{ background-color:rgb(255,170,0); border:5px solid rgb(255,170,0); color:white;}
+			
+			.search-btn span{ font-size:18px; font-family: 'TheJamsil4Medium'; }
+				
+				
+		/* 정기권 조회 / 결제 */
+		.inquiry h2{ width:100%; text-align:center; font-size:25px; margin:160px 0 15px; }
+		.caution{ width:270px; text-align:center; margin-left:195px;}		
+			.inquiry .car{ margin-left:150px; text-align:center; font-size:16px; text-shadow:0px 2px 2px #ccc; }
+			.inquiry input{ width:500px; height:72px; border:3px solid rgb(239, 62, 0); border-radius:11px; text-align:center; font-family: 'TheJamsil3Regular'; font-size:15px; }
+				.inquiry input:focus { border-color:#FFAA00; outline:none; }
+			
+				.inquiry-btn{ margin-left:10px; width:117px; height:78px; background-color:rgb(239, 62, 0); border-radius:15px; color:#fff; border:none; }
+					.inquiry-btn:hover{ background-color:rgb(255,170,0); border:5px solid rgb(255,170,0); cursor:pointer; }
+				
+				.inquiry-btn span{ font-size:18px; font-family: 'TheJamsil4Medium'; }
+				
+
+		 .carWrap{ position:relative; width:900px; height:370px; margin:0 auto; border-top:2px solid #EF3E00; margin-top:45px; border-bottom:2px solid #EF3E00; background-color:#F7F7F7; text-align:center; }
+				.carWrap ul{ float:left; font-size:15px; text-align:center;}
+				.carWrap ul li{padding:10px 0; border-bottom:1px dotted #EF3E00; font-family: 'TheJamsil3Regular';} 
+				
+				.carNumber{ width:120px; }
+				.park{ width:490px; border-left:1px solid #EF3E00; }
+				.period{ width:100px; border-left:1px solid #EF3E00; }
+				.date{ width:90px; border-left:1px solid #EF3E00; }
+				.state{ width:93px; border-left:1px solid #EF3E00; }
+				
+				.carWrap span{ position:absolute; top:180px; left:0; width:900px; font-family: 'TheJamsil3Regular'; font-size:14px; color:#575757; }
+				
+				p{ margin-left:605px; margin-top:10px; font-size:13px; font-family: 'TheJamsil3Regular'; cursor:pointer; }
+			
+			/* 정기권 이용 유의사항 */
+			.note { margin-left:65px; margin-top:150px; color:gray; }
+				.note h3{ margin-bottom:20px;  color:#242424; font-size:15px; }
+				.note ul{float:left; width:440px; margin-left:50px;}
+					.note ul li{ list-style:disc; line-height:20px; font-family: 'TheJamsil3Regular'; }
+					
+					
+	/*container끝  */
+				
+			#footer{ position:relative; width:100%; height:300px; background-color:#1e1e1e;}
+
+				#infowrap{width:1200px; position:absolute; left:50%; margin-left:-600px;}
+
+					.footerLogo{cursor:pointer; width:100px; height:100px; position:absolute; top:100px; }
+
+					#info { font-size:12px; position:absolute; left:150px; top:90px; color:#fff; line-height:30px;}
+						#info li span { font-family: 'TheJamsil3Regular'; }
+						.infoRight { margin-left:250px; margin-top:-61px; }
+					
+					address{color:gray; font-size:12px;  margin-top:190px; margin-left:400px;}
+				
+				#sns{position:absolute; right:0; top:90px; }
+					#sns img { margin-left:20px; }
+}
+			
+			
+			
+			
+			

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Plus !</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/premium2.js"></script>    
+	<style>
+		@import url(css/premium2.css);
+        @font-face {
+			font-family: 'TheJamsil5Bold';
+			src: url(font/The-Jamsil-5-Bold.ttf);
+			font-weight: 700;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TheJamsil4Medium';
+			src: url(font/The-Jamsil-4-Medium.ttf);
+			font-weight: 500;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TheJamsil3Regular';
+			src: url(font/The-Jamsil-3-Regular.ttf);
+			font-weight: 400;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'TheJamsil2Light';
+			src: url(font/The-Jamsil-2-Light.ttf);
+			font-weight: 300;
+			font-style: normal;
+		}
+		
+	</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1><a href="index.html"><img src="images/logo.png" alt="plus 로고이미지"></a></h1>
+		<ul id="topMenu">
+			<li class="sub find"><a href="find1.html">Find</a>
+                <ul>
+                    <li><a href="find1.html">공영·사설 주차장 검색</a></li>
+                    <li><a href="find2.html">무료 주차장 검색</a></li>
+                </ul>
+			</li>
+			<li class="sub voucher"><a href="voucher1.html">Voucher</a>
+                <ul>
+                    <li><a href="voucher1.html">정기권 구매</a></li>
+                    <li><a href="voucher2.html">요금 안내</a></li>
+                </ul>
+			</li>
+			<li class="sub premium"><a href="premium1.html">Premium</a>
+                <ul>
+                    <li><a href="premium1.html">프리미엄 서비스</a></li>
+                    <li><a href="premium2.html">주차권 예약구매</a></li>
+                </ul>
+			</li>
+            <li class="sub notice"><a href="notice.html">Notice</a></li>
+            <li class="sub login"><a href="login.html">Login</a></li>
+
+		</ul>
+	
+	</div> <!--header-->
+	
+	<div id="container">
+        <div class="banner"><img src="images/premium2_banner.jpg" alt="premium2 배너이미지"></div>
+
+		<div class="iconWrap">
+			<h2>지역별 예약 구매</h2>
+			<p>원하는 지역을 선택하여 예약 구매를 해보세요</p>
+			<div class="city seoul"><img src="images/seoul.png" alt="서울시 아이콘" width="100px"><span>서울 | SEOUL</span></div>
+			<div class="city incheon"><img src="images/incheon.png" alt="인천시 아이콘" width="80px"><span>인천 | INCHEON</span></div>
+			<div class="city suwon"><img src="images/suwon.png" alt="수원시 아이콘" width="110px"><span>수원 | SUWON</span></div>
+			<div class="city daejeon"><img src="images/daejeon.png" alt="대전시 아이콘" width="90px"><span>대전 | DAEJEON</span></div>
+			<div class="city busan"><img src="images/busan.png" alt="부산시 아이콘" width="85px"><span>부산 | BUSAN</span></div>
+			<div class="city jeju"><img src="images/jeju.png" alt="제주시 아이콘" width="90px"><span>제주 | JEJU</span></div>
+		</div>
+
+		
+		<div id="contents">
+			<h2>주차권 예약하기</h2>
+			<p><span>*</span> 표시는 필수 항목입니다.</p>
+			
+			<div class="contentBox">
+				<div class="content Lcontent">
+					<h3><span>*&nbsp</span>성명</h3>
+					<input type="text" id="name" placeholder="한글 또는 영문으로 입력해주세요">
+					<h3><span>*&nbsp</span>휴대전화</h3>
+					<input type="tel" id="phone" placeholder="'-'없이 숫자만 입력해주세요">
+					<h3>차량 브랜드</h3>
+					<select name="brand" id="brand" class="cursor">
+						<option value>차량 브랜드를 선택해주세요</option>
+						<option value="현대">현대</option>
+						<option value="기아">기아</option>
+						<option value="제네시스">제네시스</option>
+						<option value="KGM">KGM</option>
+						<option value="쉐보레">쉐보레</option>
+						<option value="르노삼성">르노삼성</option>
+						<option value="BMW">BMW</option>
+						<option value="벤츠">벤츠</option>
+						<option value="아우디">아우디</option>
+						<option value="폭스바겐">폭스바겐</option>
+						<option value="기타">기타</option>
+					</select>
+					<h3><span>*&nbsp</span>차량 번호</h3>
+					<input type="text" id="number" placeholder="차량 번호를 입력해주세요 (00가0000)">
+					<h3>차량 모델</h3>
+					<input type="text" id="model" placeholder="차량 모델을 입력해주세요 (쏘나타, K3)">
+					<h3 class="bigText">개인정보처리방침 <span>(필수)</span></h3>
+					<textarea cols="10" rows="10" style="font-family: 'TheJamsil3Regular';text-align:justify;resize:none" spellcheck="false">'Plus 주차장'은 (이하 '회사'는) 고객님의 개인정보를 중요시하며, '정보통신망 이용촉진 및 정보보호'에 관한 법률을 준수하고 있습니다. 회사는 개인정보취급방침을 통하여 고객님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다. 
+
+회사는 개인정보취급방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.
+								
+ο 본 방침은 : 2019 년 07 월 01 일 부터 시행됩니다.
+								
+								
+1. 수집하는 개인정보 항목
+								
+회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+
+ο 수집항목 : 이름, 성별, 로그인ID, 비밀번호, 자택 전화번호, 자택 주소, 휴대전화번호, 이메일, 생년월일, 서비스 이용기록, 접속 로그, 접속 IP 정보, sms수신여부
+ο 개인정보 수집방법 : 홈페이지(회원가입 및 이용예약)
+								
+								
+
+2. 개인정보의 수집 및 이용목적
+
+회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.
+								
+ο 회원 관리
+회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 , 가입 의사 확인 , 불만처리 등 민원처리 , 고지사항 전달
+
+
+								
+3. 개인정보의 보유 및 이용기간
+
+회사는 고객이 회사가 제공하는 서비스를 받는 동안 고객님의 개인정보를 계속 보유하며 서비스 제공을 위해 이용하게 됩니다. 
+다만 고객이 본인의 개인정보와 관련하여 불만이나 의견이 있으신 경우, 개인정보 관리담당자에게 메일로 의견을 주시면 삭제 조치하고 처리결과를 메일로 통보해 드리겠습니다. 
+		
+
+		
+4. 개인정보의 파기절차 및 방법
+
+회사는 고객이 요청한 경우 해당 정보를 지체 없이 파기합니다. 파기방법은 다음과 같습니다.
+								
+ο 파기방법
+   - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+								
+								
+								
+5. 개인정보 제공
+
+회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+   - 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우
+								
+
+
+6. 이용자 및 법정대리인의 권리와 그 행사방법
+
+고객님 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.
+								
+
+고객님 혹은 만 14세 미만 아동의 개인정보 조회/수정을 위해서는 ‘개인정보 변경’(또는 ‘회원정보수정’ 등)을 가입해지(동의철회)를 위해서는 “회원탈퇴”를 클릭 하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다. 혹은 개인정보 관리책임자에게 이메일로 연락하시면 지체 없이 조치하겠습니다.
+
+고객이 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자 에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.
+								
+회사는 고객님 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 “회사가 수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.
+								
+
+
+7. 개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항
+
+회사는 고객님의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’ 등을 운용합니다. 쿠키란 자사의 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 고객의 컴퓨터 하드디스크에 저장됩니다. 회사는 다음과 같은 목적을 위해 쿠키를 사용합니다.
+
+   - 쿠키 등 사용 목적
+   - 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공
+   
+고객님은 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서 고객님은 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.
+
+   - 쿠키 설정 거부 방법
+쿠키 설정을 거부하는 방법으로는 고객님이 사용하시는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다.
+   - 설정방법
+예(인터넷 익스플로어의 경우) : 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보
+단, 귀하께서 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.
+
+
+
+8. 개인정보에 관한 민원서비스
+
+회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보관리책임자를 지정하고 있습니다.
+
+개인정보 관리책임자 전화번호 : 1234-5678
+이메일 : plus123@naver.com
+
+고객님께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자에게 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.
+기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.
+개인분쟁조정위원회 : 1234-5678 (www.plus.go.kr)
+개인정보침해신고센터 : 118, (plus.kisa.or.kr)
+대검찰청 사이버범죄수사단 : 1301, plus@plus.go.kr (www.plus.go.kr)
+경찰청 사이버안전국 : 182, (plus.police.go.kr)
+					</textarea>
+					<label><input type="checkbox" name="agree1" value="no"><h4>&nbsp;&nbsp;개인정보처리방침에 동의합니다.</h4></label>
+				</div>
+				<div class="content Rcontent">
+					<h3><span>*&nbsp</span>서비스 유형</h3>
+					<select name="service" id="service" class="cursor">
+						<option value="일반">일반</option>
+						<option value="프리미엄">프리미엄</option>
+					</select>
+					<h3><span>*&nbsp</span>할인 유형</h3>
+					<select name="discount" id="discount" class="cursor">
+						<option value="일반">일반</option>
+						<option value="프리미엄">프리미엄</option>
+					</select>
+					<h3>색상</h3>
+					<select name="color" id="color" class="cursor" placeholder="차량 색상을 선택해주세요">
+						<option value="검정색">검정색</option>
+						<option value="하얀색">하얀색</option>
+						<option value="회색">회색</option>
+						<option value="파란색">파란색</option>
+						<option value="빨간색">빨간색</option>
+						<option value="녹색">녹색</option>
+						<option value="노란색">노란색</option>
+						<option value="기타">기타</option>
+					</select>
+					<h3>기타내용</h3>
+					<input type="text" id="order" placeholder="요청사항 및 기타문의">
+					<h3><span>*&nbsp</span>비밀번호</h3>
+					<input type="password" id="password" placeholder="수정 시 필요">
+					<h3 class="bigText">이용약관 <span>(필수)</span></h3>
+					<textarea cols="10" rows="10" style="font-family: 'TheJamsil3Regular';text-align:justify;resize:none" spellcheck="false">주차대행서비스 이용약관
+					
+제1조 (서비스 시작과 종료)
+
+
+① 서비스의 시작은 고객이 차량을 직원에게 인도한 시점으로 한다. 고객은 서비스 시작 시 차량상태를 점검하여 직접 사진, 동영상 등을 촬영해두어야 한다. 
+
+② 서비스의 종료는 고객이 차량을 인도받은 시점으로 한다. 
+
+
+
+제2조 (서비스 요금)
+
+
+① 주차요금은 홈페이지 내 요금안내 기준에 따른다.
+
+② 주차대행 이용 시 주차대행료는 주차요금과 별도로 추가된다. 
+
+③ 요금 결제 시 최종요금의 부가가치세(10%)는 별도로 추가된다. 
+
+
+
+제3조 (차량파손 및 손해배상)
+
+
+① 당사가 차량을 인수한 시점에서 차량의 고객인계시점(서비스 지역에서 출발)까지의 차량의 파손 및 손상에 대해서는 고객이 차량인도 시(서비스 시작 시) 현장에서 촬영한 사진 및 동영상 대조 등을 통해 이상 유무가 명확히 확인되어야 하며 귀책사유가 당사에 있을 경우 당사에서 손해배상을 한다. 
+
+② 고객은 차량 인수시점에서 차량의 이상 유무를 확인하여야 하며, 차량의 손상이 발생했을 경우에는 반드시 서비스 지역에서 출발 전 담당직원에게 알려야 손해배상을 청구할 수 있다. 고객이 손해배상을 청구할 때는 고객이 직접 당사의 귀책여부를 입증해야 한다. 
+
+③ 당사의 책임으로 하는 차량 수리는 반드시 당사에서 지정한 업체에서 수리하여야 한다. (강제조항임)
+
+④ 차량 수리 시 차량 렌트 등 수리 이외의 사항은 당사에서 부담할 수 없다. 
+
+⑤ 다음의 각 호의 경우에는 고객이 당사의 책임문제 제기 및 손해배상을 청구할 수 없다. 1. 고객이 서비스 지역을 출발하여 운행 중 추후 차량 손상을 제기한 경우2. 천재지변, 자연적 마모에 따른 고장에 의한 경우(타이어 펑크, 밧데리 방전 등) 3. 서비스 시작 시 이미 손상된 차량 및 손상이 확대된 경우(유리금 확대 등)4. 일반적인 촬영 및 육안으로 식별이 불가능한 미세한 생활흠집, 문콕 등의 경우5. 차량 자체의 기계적인 결함(엔진, 블랙박스, 내장 전자기기 불량 등)
+
+⑥ 차량 사고 시 손해배상금은 주차대행비의 100배를 초과할 수 없다. 
+
+⑦ 인사사고 및 차량사고 시 당사에서 가입한 보험 외 고객의 책임보험 및 종합보험으로 처리될 수 있다. 
+
+
+
+제4조 (귀중품의 보관)
+
+
+고객은 현금, 유가증권, 기타 귀중품은 휴대하여야 하고, 보관으로 필요로 하는 품목은 서비스 요청 시 목록을 작성하여 담당자 및 고객센터에 확인을 받아야 한다. 확인되지 않은 귀중품의 분실 및 손상에 대해서는 손해배상을 청구할 수 없다. 				
+					</textarea>
+					<label><input type="checkbox" name="agree2" ><h4>&nbsp;&nbsp;이용약관에 동의합니다.</h4></label>
+				</div>
+			</div>
+			<div class="btn">
+				<button class="Lbtn">초기화</button>
+				<button class="Rbtn">예약하기</button>
+			</div>	
+		</div>
+		
+	</div> <!--container-->
+</div><!--wrapper-->
+
+	<div id="footer">
+
+		<div id="infowrap">
+            <div class="footerLogo"><a href="index.html"><img src="images/logo.svg" alt="로고 이미지"></a></div>            
+			<ul id="info">
+				<li>(주)PLUS</li>
+				<li>주소 : <span>경기도 수원시 팔달구 권광로</span></li>
+				<li>Tel : <span>010-1234-5678</span></li>
+				<li>Mail : <span>teamPlus@project.com</span></li>
+				<li class="infoRight">사업자등록번호 : <span>123-456-78945</span></li>
+				<li class="infoRight">통신판매업신고번호 : <span>2024-plus-0623</span></li>
+			</ul>
+		
+			<address>&copy;2024 PLUS Inc - All Rights Reserved.</address>
+			
+			<div id="sns">
+				<a href="#"><img id="insta" src="images/insta.svg" alt="인스타그램 로고이미지"></a>
+				<a href="#"><img id="blog" src="images/blog.svg" alt="네이버블로그 로고이미지"></a>	
+			</div>
+		</div>
+	</div><!--footer-->
+</body>
+</html>
