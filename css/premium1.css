@@ -46,7 +46,8 @@ body{ font-size:12px; font-family:'TheJamsil5Bold'; }
 	#textWrap { font-size:14px; line-height:26px; }
 	#textWrap span{background:rgba(239, 62, 0, 0.8); padding:5px 20px;}
 
-	#textWrap small { font-size:15px; color:#fff; background-color:#EF3E00; padding:15px 25px; border-radius:25px; }
+	#textWrap a { color:#fff; }
+	#textWrap small { font-size:15px; color:#fff; background-color:#EF3E00; padding:15px 25px; border-radius:25px; }	
 		#textWrap small:hover{ cursor:pointer; background-color:#FFAA00; }
 
 
